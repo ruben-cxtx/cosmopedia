@@ -19,7 +19,8 @@ const planets = defineCollection({
         gravity: z.number(),
 
 
-        color: z.string(),
+
+        colors: z.tuple([z.string(), z.string()]),
         texture: z.string().optional(),
 
         distanceFromSun: z.number(),
