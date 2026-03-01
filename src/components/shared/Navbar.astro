@@ -15,18 +15,18 @@ const links: Link[] = [
 const currentUrl = Astro.url.pathname;
 ---
 
-<nav class="flex justify-between p-6" aria-label="Main navigation">
+<nav class="flex justify-between p-6 items-center" aria-label="Main navigation">
   <div id="logo">
     <img src="/logo/cosmopedia.svg" alt="Cosmopedia Logo" class="h-8 w-auto" />
   </div>
-  <ul class="flex justify-evenly gap-6">
+  <ul class="flex justify-evenly gap-6 self-center">
     {
       links.map((link) => (
         <li>
           <a
             aria-current={currentUrl === link.href ? "page" : undefined}
             href={link.href}
-            class={`relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-purple-400 after:transition-all hover:after:w-full pb-0.5 ${currentUrl === link.href && "text-purple-400"}`}
+            class={`relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full pb-0.5 ${currentUrl === link.href && "text-primary"}`}
           >
             {link.name}
           </a>
@@ -34,5 +34,5 @@ const currentUrl = Astro.url.pathname;
       ))
     }
   </ul>
-  <ThemeToggle client:load />
+  <ThemeToggle client:only="react" />
 </nav>
