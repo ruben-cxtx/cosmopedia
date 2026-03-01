@@ -1,0 +1,30 @@
+---
+import { ThemeToggle } from "../ui/ThemeToggle";
+interface Link {
+    name: string;
+    href: string;
+}
+
+const links: Link[] = [
+    { name: "Home", href: "/" },
+    { name: "Planets", href: "/planets" },
+    { name: "Constellations", href: "/constellations" },
+    { name: "About", href: "/about" },
+];
+
+---
+<nav class="flex justify-between p-6" aria-label="Main navigation">
+    <div id="logo">
+        <img src="/logo/cosmopedia.svg" alt="Cosmopedia Logo" class="h-8 w-auto" >
+    </div>
+    <ul class="flex justify-evenly gap-6">
+        {
+            links.map(link => (
+                <li>
+                    <a href={link.href} class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-purple-400 after:transition-all hover:after:w-full pb-0.5">{link.name}</a>
+                </li>
+            ))
+        }
+    </ul>
+    <ThemeToggle client:load/>
+</nav>

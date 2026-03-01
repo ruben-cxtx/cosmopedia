@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220" width="340" height="220">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Icon centered at 170, 90 -->
+  <!-- Outer ring -->
+  <circle cx="170" cy="85" r="44" fill="none" stroke="white" stroke-width="1.5"/>
+  <!-- Inner ring -->
+  <circle cx="170" cy="85" r="32" fill="none" stroke="white" stroke-width="1"/>
+  <!-- Planet -->
+  <circle cx="170" cy="85" r="22" fill="none" stroke="white" stroke-width="1.5"/>
+  <!-- Horizon -->
+  <path d="M 148 91 Q 170 84 192 91" fill="none" stroke="white" stroke-width="1.2"/>
+  <!-- Crater 1 -->
+  <ellipse cx="162" cy="79" rx="5" ry="3" fill="none" stroke="white" stroke-width="1"/>
+  <!-- Crater 2 -->
+  <ellipse cx="179" cy="93" rx="3.5" ry="2" fill="none" stroke="white" stroke-width="0.8"/>
+  <!-- Crater dot -->
+  <circle cx="176" cy="79" r="1.5" fill="none" stroke="white" stroke-width="0.8"/>
+
+  <!-- Thin divider -->
+  <line x1="60" y1="148" x2="280" y2="148" stroke="white" stroke-width="0.5" stroke-opacity="0.4"/>
+
+  <!-- Wordmark -->
+  <text
+    x="170"
+    y="178"
+    text-anchor="middle"
+    font-family="'Cinzel', 'Trajan Pro', Georgia, serif"
+    font-size="28"
+    font-weight="600"
+    letter-spacing="6"
+    fill="white"
+  >COSMOPEDIA</text>
+
+  <!-- Tagline -->
+  <text
+    x="170"
+    y="198"
+    text-anchor="middle"
+    font-family="'Cinzel', Georgia, serif"
+    font-size="8"
+    font-weight="400"
+    letter-spacing="5"
+    fill="white"
+    fill-opacity="0.5"
+  >EXPLORE THE UNIVERSE</text>
+</svg>
