@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 100" width="480" height="100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Icon group centered at 50,50 -->
+  <!-- Outer ring -->
+  <circle cx="50" cy="50" r="44" fill="none" stroke="white" stroke-width="1.5"/>
+  <!-- Inner ring -->
+  <circle cx="50" cy="50" r="32" fill="none" stroke="white" stroke-width="1"/>
+  <!-- Planet -->
+  <circle cx="50" cy="50" r="22" fill="none" stroke="white" stroke-width="1.5"/>
+  <!-- Horizon -->
+  <path d="M 28 56 Q 50 49 72 56" fill="none" stroke="white" stroke-width="1.2"/>
+  <!-- Crater 1 -->
+  <ellipse cx="42" cy="44" rx="5" ry="3" fill="none" stroke="white" stroke-width="1"/>
+  <!-- Crater 2 -->
+  <ellipse cx="59" cy="58" rx="3.5" ry="2" fill="none" stroke="white" stroke-width="0.8"/>
+  <!-- Crater dot -->
+  <circle cx="56" cy="44" r="1.5" fill="none" stroke="white" stroke-width="0.8"/>
+
+  <!-- Wordmark -->
+  <text
+    x="110"
+    y="62"
+    font-family="'Cinzel', 'Trajan Pro', Georgia, serif"
+    font-size="38"
+    font-weight="600"
+    letter-spacing="6"
+    fill="white"
+  >COSMOPEDIA</text>
+</svg>
